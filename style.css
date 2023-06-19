@@ -18,11 +18,22 @@ body {
   align-items: center;
   gap: 2rem;
 }
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+}
 .container .form-container {
   width: 40%;
   padding: 1rem;
   height: 80%;
   background-color: rgb(52, 39, 238);
+}
+@media (max-width: 768px) {
+  .container .form-container {
+    width: 90%;
+  }
 }
 .container .form-container form {
   display: flex;
@@ -49,6 +60,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .container .card-container {
+    width: 90%;
+  }
+}
 .container .card-container .card {
   width: 70%;
   height: 80%;
@@ -56,6 +72,11 @@ body {
   color: white;
   margin: 0 auto;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(52, 50, 50, 0.09) 0px -3px 5px;
+}
+@media (max-width: 768px) {
+  .container .card-container .card {
+    width: 95%;
+  }
 }
 .container .card-container .card .banner {
   width: 100%;
@@ -70,6 +91,11 @@ body {
   height: 25%;
   display: flex;
   gap: 2rem;
+}
+@media (max-width: 768px) {
+  .container .card-container .card .profilDetails {
+    height: 40%;
+  }
 }
 .container .card-container .card .profilDetails .name {
   width: 40%;
@@ -87,6 +113,13 @@ body {
   left: 1.4rem;
   border: 6px solid #231E39;
 }
+@media (max-width: 768px) {
+  .container .card-container .card .profilDetails .img img {
+    width: 50%;
+    height: 100px;
+    left: 50%;
+  }
+}
 .container .card-container .card .description {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -102,6 +135,11 @@ body {
   padding: 0.5rem 1rem;
   color: #231E39;
   border: none;
+}
+@media (max-width: 768px) {
+  .container .card-container .card .actions button {
+    padding: 0.3rem 0.6rem;
+  }
 }
 .container .card-container .card .actions .messegeBtn {
   background-color: #03BFBC;
@@ -119,4 +157,9 @@ body {
   align-items: center;
   gap: 1rem;
   justify-content: center;
+}
+@media (max-width: 768px) {
+  .container .card-container .card .socials {
+    width: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */
