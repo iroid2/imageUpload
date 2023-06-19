@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>iroid upload</title>
+     <link rel="stylesheet" href="style.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+     <div class="container">
+          <div class="form-container">
+               <form >
+                    <div class="formInput">
+                         <label for="banner" >Upload Banner</label>
+                         <input type="file"id="banner">
+                    </div>
+                    <div class="formInput">
+                         <label for="profilImg" >Unpload Profile</label>
+                         <input type="file"id="banner" >
+                    </div>
+                    <div class="formInput">
+                         <label for="username">Enter username</label>
+                         <input type="text" id="username" placeholder="Enter username">
+                    </div>
+                    <div class="formInput">
+                         <label for="description">Enter Occupation Bio</label>
+                         <input type="text" id="description" placeholder="Enter Your Job description">
+                    </div>
+                    <input type="submit" value="Submit">
+               </form>
+          </div>
+          <div class="card-container">
+               <div class="card">
+                    <div class="banner">
+                         <img src="data:image/jpeg;base64,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" alt="">
+                    </div>
+                    <div class="profilDetails">
+                         <div class="img">
+                              <img src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" alt="">
+                         </div>
+                         <div class="name">
+                              <h3>Sam Smith</h3>
+                         </div>
+                    </div>
+                    <div class="description">
+                         Lorem ipsum dolor sit amet Lorem, ipsum dolor.
+                          consectetur adipisicing.
+                    </div>
+                    <div class="actions">
+                         <button class="messegeBtn" type="button">Messege</button>
+                         <button class="follwgBtn" type="button">FOLLOWING</button>
+                    </div>
+                    <div class="socials">
+                         <i class='bx bxl-facebook-circle'></i>
+                         <i class='bx bxl-twitter' ></i>
+                         <i class='bx bxl-instagram-alt' ></i>
+                         <i class='bx bxl-youtube' ></i>
+                    </div>
+               </div>
+          </div>
+     </div>
+</body>
+</html>
