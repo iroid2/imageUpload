@@ -5,6 +5,7 @@ const banner=document.querySelector("#banner")
 const username=document.querySelector("#username")
 const profImg=document.querySelector("#profImg")
 const description=document.querySelector("#description")
+const imagConatiner=document.querySelector('img')
 
 form.addEventListener('submit',(event)=>{
      event.preventDefault()
@@ -20,11 +21,13 @@ form.addEventListener('submit',(event)=>{
 
      const reader= new FileReader()
      reader.onload=function (event){
-          console.log(reader)
-          fileImg.src=event.target.result;
-          banImg.src=event.target.result;
+          card.fileImg=event.target.result;
+          card.banImg=event.target.result;
           username.textContent=card.username; 
-          description.textContent=card.description
+          description.textContent=card.description;
+          imagConatiner.src=card.fileImg;
+          imagConatiner.src=card.banImg;
+          console.log(event.target)
 
           localStorage.setItem('card',JSON.stringify(card))
      };
